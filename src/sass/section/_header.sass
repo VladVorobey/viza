@@ -1,0 +1,219 @@
+.header
+	position: relative
+	background: $mine-shaft center no-repeat
+	background-size: cover
+	color: $white
+	padding: 140px 0
+	+r(768)
+		padding: 150px 0 90px
+	+r(576)
+		padding: 120px 0 30px
+	&__content
+		padding: 105px 0 0
+		+r(992)
+			padding: 0
+			margin-bottom: 30px
+		h1
+			position: relative
+			font-family: $second-font
+			font-weight: 700
+			font-size: 63px
+			line-height: 1.1em
+			text-transform: uppercase
+			max-width: 550px
+			padding-bottom: 30px
+			margin-bottom: 30px
+			+r(768)
+				font-size: 48px
+			+r(576)
+				font-size: 36px
+			&::after
+				content: ''
+				width: 50px
+				height: 7px
+				position: absolute
+				bottom: 0
+				left: 0
+				background: $blue-ribbon
+			span
+				font-size: 26px
+			strong
+				display: block
+				line-height: 1em
+				text-transform: none
+				font-size: 21px
+				font-weight: 600
+				+r(576)
+					font-size: 18px
+		h3
+			font-weight: 700
+			font-size: 21px
+			line-height: 1em
+			margin-bottom: 35px
+		ul
+			display: flex
+			width: 100%
+			flex-wrap: wrap
+			li
+				font-family: $second-font
+				font-size: 15px
+				font-weight: 600
+				line-height: 1.4em
+				padding-left: 15px
+				max-width: 250px
+				position: relative
+				+r(576)
+					font-size: 14px
+				&:not(&:last-child)
+					margin-right: 30px
+					margin-bottom: 10px
+				a
+					color: $white
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+				+r(1200)
+					br
+						display: none
+				&::before
+					content: ''
+					width: 8px
+					height: 8px
+					position: absolute
+					background: $dodger-blue
+					left: 0
+					top: 5px
+					border-radius: 50%
+		p
+			position: relative
+			&::before
+				content: '*'
+				color: $blue-ribbon
+	&__second
+		+r(576)
+			padding: 50px 0
+		.header__content
+			max-width: 700px
+			margin-left: auto
+			h1
+				max-width: none
+			li
+				margin-right: 15px
+
+.form-block
+	background: $white
+	border-radius: 5px
+	box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.15)
+	text-align: center
+	padding: 40px 35px
+	+r(576)
+		padding: 40px 15px
+	h3
+		position: relative
+		font-family: $second-font
+		font-weight: 700
+		font-size: 24px
+		line-height: 1.2em
+		color: $mine-shaft
+		text-transform: uppercase
+		padding-bottom: 30px
+		margin-bottom: 15px
+		&::before
+			content: ''
+			width: 50px
+			height: 7px
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			background: $blue-ribbon
+	p
+		font-weight: 600
+		line-height: 1.5em
+		color: $mine-shaft-two
+		margin-bottom: 30px
+	label.form-block__label
+		position: relative
+		margin-bottom: 25px
+		display: block
+		&::before
+			content: ''
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&:first-of-type
+			&::before
+				content: url("../img/avatar.svg")
+				width: 16px
+				height: 16px
+				position: absolute
+		&:nth-of-type(2)
+			&::before
+				content: url("../img/phone-call.svg")
+				width: 16px
+				height: 16px
+				position: absolute
+		&:last-of-type
+			margin-bottom: 30px
+	.button
+		margin-bottom: 25px
+	input.checkbox
+		position: absolute
+		bottom: 0
+		opacity: 0
+	&__checkbox
+		max-width: 270px
+		position: relative
+		margin: 0 auto
+		&_wrapper
+			width: 100%
+	label.label__checkbox
+		padding-left: 25px
+		font-weight: 400
+		font-size: 12px
+		color: $mine-shaft
+		line-height: 1.5em
+		text-align: left
+		position: relative
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			display: inline-block
+			width: 15px
+			height: 15px
+			background: $cod-gray
+			left: 0
+			top: 3px
+		&::after
+			content: ''
+			width: 9px
+			height: 4px
+			border-bottom: 1px solid $white
+			border-left: 1px solid $white
+			transform: rotate(-45deg)
+			position: absolute
+			left: 4px
+			top: 7px
+			opacity: 0
+			transition: all .3s ease
+	input[type="checkbox"]:checked ~ label.label__checkbox::after
+		transition: all .3s ease
+		opacity: 1
+	label.error
+		position: absolute
+		left: 50%
+		top: 0
+		background: $mine-shaft
+		z-index: 1
+		transform: translateX(-50%) translateY(-20px)
+		width: 100%
+		max-width: 250px
+		line-height: 1em
+		padding: 5px 10px
+		color: $white
+		border-radius: 4px
+		font-size: 12px
+	#agree-error
+		bottom: -40px
+		top: auto

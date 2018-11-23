@@ -1,0 +1,148 @@
+.footer
+	position: relative!important
+	background: #0f1010
+	padding: 30px 0 10px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: start
+		+r(1200)
+			justify-content: center
+			flex-direction: column
+			align-items: center
+	img.logo
+		width: 165px
+		height: auto
+		padding: 12px 0
+		margin-right: 78px
+		+r(1200)
+			margin-right: 0
+	a
+		display: block
+		color: $white
+	ul
+		display: flex
+		+r(992)
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			a
+				padding: 0
+		li
+			font-weight: 600
+			&:not(&:last-child)
+				margin-right: 30px
+			a
+				padding: 22px 0
+				position: relative
+				display: block
+				&::before
+					content: ''
+					position: absolute
+					transform: scale(0)
+					transition: all .3s
+					bottom: 20px
+					left: 0
+					width: 100%
+					height: 2px
+					background-color: $blue-ribbon
+				&:hover, &:focus
+					&::before
+						transform: scale(1)
+	.callback-info
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.tel
+			margin-bottom: 5px
+			position: relative
+			text-align: left
+			+r(1200)
+				align-items: center
+				text-align: center
+			a
+				text-decoration: none
+				position: relative
+				font-weight: 700
+				font-size: 1.285714em
+				&:hover
+					text-decoration: underline
+			p
+				font-family: $default-font
+				font-weight: 400
+				font-size: 1em
+				color: $silver
+			&::before
+				content: url("../img/tell.svg")
+				position: absolute
+				width: 15px
+				height: 15px
+				left: -27px
+				top: 50%
+				transform: translateY(-50%)
+		.mail
+			font-size: 1.142855em
+			margin-top: 10px
+			position: relative
+			a
+				&:first-of-type
+					&::before
+						content: url("../img/mail.svg")
+						position: absolute
+						width: 15px
+						height: 15px
+						left: -27px
+						top: 50%
+						transform: translateY(-50%)
+	&__adaptive
+		display: flex
+		justify-content: space-between
+		width: 100%
+		background: #0f1010
+		+r(1200)
+			display: flex
+			width: 100%
+			left: 0
+			right: 0
+			top: 0
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			transition: all .5s ease
+			li
+				opacity: 1
+			.callback-info
+				opacity: 1
+			&.active
+				transform: translateX(0)
+				li
+					opacity: 1
+				.callback-info
+					opacity: 1
+					flex-direction: row
+					justify-content: space-around
+					align-items: center
+					width: 60%
+		+r(992)
+			ul
+				margin-bottom: 30px
+				li
+					margin-right: 0
+					a
+						padding: 10px 0
+						&::before
+							bottom: 10px
+			&.active
+				.callback-info
+					flex-direction: column
+					justify-content: space-around
+					align-items: center
+					width: 100%
+.copyright
+	position: relative
+	padding: 5px 0 25px
+	background: #0f1010
+	text-align: center
+	text-transform: uppercase
+	color: rgba(255,255,255,.3)
+

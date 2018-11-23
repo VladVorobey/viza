@@ -1,0 +1,65 @@
+{% include "partials/_nav.html" %}
+<header class="header" style="background-image: url('img/header-bg.jpg')" id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="header__content">
+          <h1>
+            ВИЗА БЕЗ ХЛОПОТ
+            ОТ 1000 <span>РУБ.</span>
+          </h1>
+          <h3>
+            Всего 3 простых шага:
+          </h3>
+          <ul>
+            <li>
+              Позвоните, или <a href="#">оставьте заявку</a>
+              на нашем сайте
+            </li>
+            <li>
+              Предоставьте пакет документов
+              лично или онлайн
+            </li>
+            <li>
+              Получите свою <br>
+              визу
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="form-block">
+          <h3>
+            ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ!
+          </h3>
+          <p>
+            Оставьте свои контактные данные, что бы мы могли связаться с вами
+          </p>
+          <form action="sendmail.php" class="form form-block__callback">
+            <label class="form-block__label">
+              <input type="text" name="name" placeholder="Ваше имя:" required>
+            </label>
+            <label class="form-block__label">
+              <input type="tel" name="tel" placeholder="Ваш телефон:" required>
+            </label>
+            <button class="button">
+              Получить консультацию
+            </button>
+            <div class="form-block__checkbox_wrapper">
+              <div class="form-block__checkbox">
+                <input type="checkbox" value="agree" id="agree" name="agree" class="checkbox" checked required>
+                <label for="agree" class="label__checkbox">
+                  Нажимая кнопку, вы даете согласие на
+                  обработку персональных данных
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</header>

@@ -1,0 +1,95 @@
+.button
+	display: inline-block
+	margin: 0 auto 0
+	padding: 20px 55px
+	background-image: linear-gradient( 0deg, rgb(255,5,2) 0%, rgb(255,31,28) 67%, rgb(255,57,54) 100%)
+	box-shadow: 0 10px 30px 0 rgba(232, 33, 39, 0.3),inset 0 -4px 0 0 rgba(177, 5, 3, 1)
+	border-radius: 27.5px
+	font-weight: 700
+	font-size: 14px
+	color: $white
+	transition: all .3s ease
+	min-width: 100px
+	cursor: pointer
+	&:hover
+		transform: translateY(-1px)
+		box-shadow: 0 15px 20px 5px rgba(232, 33, 39, 0.3),inset 0 -5px 0 0 rgba(177, 5, 3, 1)
+	&:active
+		transform: translateY(1px)
+		box-shadow: 0 10px 30px 0 rgba(232, 33, 39, 0.3),inset 0 -5px 0 0 rgba(177, 5, 3, 1)
+	&__wrapper
+		width: 100%
+		text-align: center
+	&__reverse
+		padding: 18px 75px
+		background: transparent
+		color: $blue-ribbon
+		border: 1px solid $blue-ribbon
+		box-shadow: none
+		transition: .4s ease all
+		&:hover
+			background: $blue-ribbon
+			color: $white
+			box-shadow: 0 15px 20px 5px rgba(25, 102, 255, 0.2),inset 0 -2px 0 0 rgba(23, 23, 191, 1)
+	&__transparent
+		padding: 18px 75px
+		background: transparent
+		color: #ff100d
+		border: 1px solid #ff100d
+		box-shadow: none
+		transition: .4s ease all
+		&:hover
+			color: $white
+			background-image: linear-gradient( 0deg, rgb(255,5,2) 0%, rgb(255,31,28) 67%, rgb(255,57,54) 100%)
+			transform: translateY(-1px)
+			box-shadow: 0 15px 20px 5px rgba(232, 33, 39, 0.3),inset 0 -5px 0 0 rgba(177, 5, 3, 1)
+		&:active
+			transform: translateY(1px)
+			box-shadow: 0 10px 30px 0 rgba(232, 33, 39, 0.3),inset 0 -5px 0 0 rgba(177, 5, 3, 1)
+
+.title
+	position: relative
+	display: block
+	h2
+		font-family: $second-font
+		font-weight: 700
+		font-size: 40px
+		line-height: 1.25em
+		padding-bottom: 25px
+		position: relative
+		text-align: center
+		margin-bottom: 60px
+		+r(576)
+			font-size: 34px
+		&::after
+			content: ''
+			width: 50px
+			height: 7px
+			background: $blue-ribbon
+			position: absolute
+			left: 50%
+			bottom: 0
+			transform: translateX(-50%)
+		span
+			display: block
+			font-weight: 400
+			font-size: 14px
+			color: $tundora
+			line-height: 1em
+	h3
+		font-family: $second-font
+		font-weight: 700
+		font-size: 32px
+		line-height: 1.25em
+		padding-bottom: 25px
+		position: relative
+		text-align: left
+		margin-bottom: 30px
+		&::after
+			content: ''
+			width: 50px
+			height: 7px
+			background: $blue-ribbon
+			position: absolute
+			left: 0
+			bottom: 0

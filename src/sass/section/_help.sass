@@ -1,0 +1,65 @@
+.help
+	position: relative
+	padding: 0 0 90px
+
+	&__block
+		border: 3px solid $white
+		border-radius: 5px
+		background-color: $white
+		box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.3)
+		transition: all .3s ease
+		padding: 60px 25px 40px
+		text-align: center
+		height: auto
+		cursor: pointer
+		margin-bottom: 30px
+		&:hover
+			border: 3px solid rgb(25, 102, 255)
+		.icon
+			fill: $blue-ribbon
+			font-size: 56px
+			margin-bottom: 5px
+		p
+			padding: 0 20px
+			font-weight: 700
+			font-size: 20px
+			color: $mine-shaft
+			margin-bottom: 60px
+.information
+	position: relative
+	width: 100%
+	max-width: 970px
+	background: $white url("../img/information-bg.png") top left no-repeat
+	border-radius: 5px
+	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.05)
+	margin: 0 auto
+	padding: 30px 55px
+	&__wrapper
+		padding-bottom: 60px
+	h3, p
+		max-width: 310px
+	h3
+		font-weight: 700
+		font-size: 21px
+		color: $mine-shaft
+		margin-bottom: 10px
+	p
+		color: $tundora
+		margin-bottom: 10px
+	ul
+		display: flex
+		flex-wrap: wrap
+		li
+			max-width: 220px
+			padding-left: 25px
+			padding-right: 20px
+			position: relative
+			&::before
+				content: ''
+				width: 8px
+				height: 8px
+				position: absolute
+				background: $dodger-blue
+				left: 5px
+				top: 8px
+				border-radius: 50%

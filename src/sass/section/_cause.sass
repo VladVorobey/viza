@@ -1,0 +1,109 @@
+.cause
+	position: relative
+	padding: 40px 0 225px
+	background: #feffff url("../img/cause-bg.png") no-repeat bottom
+	min-height: 1100px
+	+r(992)
+		padding: 40px 0 120px
+	+r(576)
+		padding: 40px 0 40px
+	&__wrapper
+		margin-bottom: 95px
+		overflow: hidden
+		+r(1200)
+			margin-bottom: 60px
+		+r(576)
+			margin-bottom: 30px
+	.button__cause
+		display: none
+		+r(1200)
+			display: inline-block
+			margin-bottom: 60px
+	&__block
+		text-align: center
+		width: 170px
+		height: 100%
+		background: $white
+		border-radius: 5px
+		box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1)
+		padding: 30px 8px
+		margin: 0 auto
+		+r(1200)
+			height: auto
+			margin: 0 auto 30px
+		.icon
+			fill: $blue-ribbon
+			font-size: 50px
+			margin-bottom:  15px
+		h4
+			font-weight: 700
+			font-size:  16px
+			color: $mine-shaft
+			margin-bottom: 10px
+		p
+			color: $tundora
+			line-height: 1.3em
+	&__elem
+		width: 100%
+		padding: 40px 30px 30px
+		h5
+			font-family: $second-font
+			font-weight: 700
+			font-size: 21px
+			color: $mine-shaft
+			margin-bottom: 20px
+		ul
+			margin-bottom: 30px
+			li
+				margin-bottom: 15px
+				font-size: 16px
+				color: $mine-shaft
+				padding-left: 30px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+		&_true
+			border-radius: 5px
+			box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1)
+			background: $white url("../img/elem-bg.png") no-repeat right bottom
+			transition: .3s ease all
+			li
+				&::before
+					top: 5px
+					width: 16px
+					height: 7px
+					border-bottom: 1px solid $blue-ribbon
+					border-left: 1px solid $blue-ribbon
+					transform: rotate(-45deg)
+			&:hover
+				box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2)
+		&_false
+			ul
+				column-count: 2
+				+r(768)
+					column-count: 1
+					br
+						display: none
+			li
+				justify-content: space-between
+				height:  auto
+				&::before
+					background: #ff0704
+					width: 15px
+					height: 1px
+					transform: rotate(45deg)
+					top: 10px
+				&::after
+					content: ''
+					position: absolute
+					width: 15px
+					height: 1px
+					background: #ff0704
+					left: 0
+					top: 10px
+					transform: rotate(-45deg)
+		&_what-need
+			ul
+				column-count: 1

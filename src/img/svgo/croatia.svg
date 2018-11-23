@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 341.3" style="enable-background:new 0 0 512 341.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F0F0F0;}
+	.st1{fill:#D80027;}
+	.st2{fill:#0052B4;}
+	.st3{fill:#338AF3;}
+</style>
+<rect class="st0" width="512" height="341.3"/>
+<rect class="st1" width="512" height="113.8"/>
+<rect y="227.6" class="st2" width="512" height="113.8"/>
+<g>
+	<polygon class="st3" points="300.5,118.7 270.8,118.7 275.8,81.6 295.6,66.8 315.4,81.6 315.4,111.3 	"/>
+	<polygon class="st3" points="211.5,118.7 241.2,118.7 236.2,81.6 216.4,66.8 196.6,81.6 196.6,111.3 	"/>
+</g>
+<polygon class="st2" points="275.8,118.7 236.2,118.7 236.2,81.6 256,66.8 275.8,81.6 "/>
+<path class="st0" d="M196.6,111.3v81.6c0,19.4,9.4,36.7,23.9,47.6l10.4-2.6l13.1,13.2c3.9,0.8,7.9,1.2,12,1.2
+	c4.1,0,8.1-0.4,11.9-1.2l15-12.5l8.6,1.8c14.5-10.8,23.9-28.1,23.9-47.5v-81.6L196.6,111.3L196.6,111.3z"/>
+<g>
+	<rect x="196.6" y="111.3" class="st1" width="23.7" height="23.7"/>
+	<rect x="244.1" y="111.3" class="st1" width="23.7" height="23.7"/>
+	<rect x="291.6" y="111.3" class="st1" width="23.7" height="23.7"/>
+	<rect x="220.4" y="135" class="st1" width="23.7" height="23.7"/>
+	<rect x="267.9" y="135" class="st1" width="23.7" height="23.7"/>
+	<rect x="196.6" y="158.8" class="st1" width="23.7" height="23.7"/>
+	<rect x="220.4" y="182.5" class="st1" width="23.7" height="23.7"/>
+	<rect x="244.1" y="158.8" class="st1" width="23.7" height="23.7"/>
+	<rect x="291.6" y="158.8" class="st1" width="23.7" height="23.7"/>
+	<rect x="267.9" y="182.5" class="st1" width="23.7" height="23.7"/>
+	<rect x="244.1" y="206.3" class="st1" width="23.7" height="23.7"/>
+	<path class="st1" d="M220.4,206.3h-22.2c2,8.8,6,16.9,11.5,23.7h10.7L220.4,206.3L220.4,206.3z"/>
+	<path class="st1" d="M291.6,230h10.7c5.5-6.8,9.5-14.9,11.5-23.7h-22.2V230z"/>
+	<path class="st1" d="M220.4,230v10.4c6.9,5.2,15,8.9,23.7,10.7V230H220.4z"/>
+	<path class="st1" d="M267.9,230v21.1c8.8-1.8,16.8-5.5,23.7-10.7V230H267.9z"/>
+</g>
+</svg>

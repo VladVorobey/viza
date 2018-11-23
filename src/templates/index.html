@@ -1,0 +1,25 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+  <main>
+    {% include "partials/_country.html" %}
+    {% include "partials/_cause.html" %}
+    {% include "partials/_second-form.html" %}
+    <div class="bg-wrapper">
+      {% include "partials/_what-need.html" %}
+      {% include "partials/_help.html" %}
+    </div>
+    {% include "partials/_reviews.html" %}
+    {% include "partials/_map.html" %}
+  </main>
+  {% include "partials/_footer.html" %}
+  {% include "partials/_modal.html" %}
+	<!--{# mixin example #}-->
+	<!--{{mixins.icon('facebook')}}-->
+
+{% endblock %}

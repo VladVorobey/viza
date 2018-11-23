@@ -1,0 +1,68 @@
+html, body
+	font-family: $default-font
+	font-weight: 400
+	font-style: normal
+	font-size: 14px
+	line-height: 1.5em
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	min-height: 5000px
+*
+	margin: 0
+	padding: 0
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+input[type="text"], input[type="tel"]
+	border-bottom: 1px solid $concrete
+	color: $mine-shaft-three
+	border-radius: 0
+	line-height: 1em
+	padding: 10px 45px
+	box-shadow: none
+	font-family: $default-font
+	font-weight: 400
+	font-size: 14px
+	width: 100%
+	background: transparent
+	outline: none
+	-webkit-appearance: none
+	-moz-appearance: none
+	&::placeholder
+		color: $mine-shaft-three
+		font-size: 14px
+		font-weight: 400
+	&:focus:required:invalid
+		color: $mine-shaft-three
+		border-color: red
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+		font-size: 1em
+	&:focus:required:valid
+		border-color: $blue-ribbon
+		color: $mine-shaft-three
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+		font-size: 1em
+	&:required:invalid
+		color: $mine-shaft-three
+		border-color: $concrete
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+		font-size: 14px
+	&:required:valid
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+		font-size: 14px
+		line-height: 1em
